@@ -5,4 +5,4 @@ response_path = os.path.join("artifacts", "Response.json")
 PORT = 8080
 HOST = "0.0.0.0"
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
