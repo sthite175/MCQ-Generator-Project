@@ -20,9 +20,10 @@ from langchain.agents import initialize_agent
 from langchain.memory import ConversationBufferMemory
 
 import config
-
-
-llm = ChatOpenAI(api_key=config.OPENAI_API_KEY,  model="gpt-3.5-turbo", temperature=1.2)
+from dotenv import load_dotenv
+load_dotenv()
+key = os.getenv("OPENAI_API_KEY")
+llm = ChatOpenAI(api_key=key,  model="gpt-3.5-turbo", temperature=1.2)
 
 
 TEMPLATE = """
