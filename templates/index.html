@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page MCQ Generator</title>
+    <style>
+        body {
+            background-image: url('/static/bg_image2.jpg');
+            background-size: cover;
+            color: indigo;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+        <h2 style="color: coral;">MCQ Generator</h2>
+        <form method="POST" action="/mcq_generator" enctype="multipart/form-data">
+            <label for="file"><strong>Upload Any File (Text or PDF)</strong></label>
+            <br>
+            <input type="file" name="file" id="file" accept=".txt, .pdf" required>
+            <br>
+            <br>
+            <label><strong>Number of MCQ</strong></label>
+            <input type="text"  name="NUMBERS">
+            <br>
+            <br>
+            <label><strong>Subject</strong></label>
+            <input type="text"  name="SUBJECT">
+            <br>
+            <br>
+            <label><strong>Difficulty Level</strong></label>
+            <select id="TONE" name="TONE" required>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Generate MCQ">
+</body>
+</html>

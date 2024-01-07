@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result MCQ Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: left;
+            margin: 20px;
+        }
+
+        .mcq-container {
+            margin-bottom: 20px;
+        }
+
+        .mcq-question {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .mcq-options {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .mcq-answer {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Generated MCQ</h2>
+    {% for mcq in result %}
+        <div class="mcq-container">
+            <p class="mcq-question">{{ mcq }}</p>
+            <p class="mcq-options">
+                <!-- Add your logic to extract and display options here -->
+            </p>
+            <p class="mcq-answer">
+                <!-- Add your logic to extract and display answer here -->
+            </p>
+            <div class="horizontal-line"></div>
+        </div>
+    {% endfor %}
+</body>
+</html>

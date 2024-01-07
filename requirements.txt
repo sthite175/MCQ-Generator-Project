@@ -1,0 +1,6 @@
+numpy
+pandas
+PyPDF2
+Flask
+openai
+langchain
