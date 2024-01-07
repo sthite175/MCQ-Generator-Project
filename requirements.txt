@@ -1,6 +1,7 @@
 numpy
 pandas
 PyPDF2
+python-dotenv
 Flask
 openai
 langchain
